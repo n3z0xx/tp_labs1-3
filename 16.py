@@ -4,5 +4,5 @@ import random
 
 while True:
     spam = random.randint(0, 12)
-    print(spam, bin(spam), oct(spam), hex(spam), len(bin(spam))-2)
+    print(spam, bin(spam), oct(spam), hex(spam), spam.bit_length())
     if spam == 0: break
