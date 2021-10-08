@@ -4,8 +4,8 @@
 # difury, diskmat, infbez, engl, comparch. Надо заполнить значения рандомными числами (оценки по предметам) в диапазоне от 50 до 100 с шагом 5. 
 # Сначала делать один такой кортеж, потом склеиваете или как-то
 # еще. По минимумм хоть один (это заготовка на следующую лабу, уже 4)
-from colections import namedtuple
+from collections import namedtuple
 import random
 sub = namedtuple("FIO", "matan01 techprog02 difury03 diskmat04 infbez05 engl06 comparch07")
 l = [sub(*[random.choice(range(50, 101, 5)) for _ in range(7)]) for _ in range(10)]
-prtin(l)
+print(l)
